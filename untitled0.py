@@ -13,7 +13,7 @@ import transformers
 from transformers import pipeline
 
 gerador = pipeline("text-generation", model="pierreguillou/gpt2-small-portuguese")
-texto = "A tecnoligia e um marco muito importante da humanidade"
+texto = "Adicionar textp"
 resultado = gerador(texto, max_length=100, do_sample=True)
 print(resultado)
 
